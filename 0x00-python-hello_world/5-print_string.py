@@ -1,3 +1,3 @@
-!#/usr/bin/python3
+#!/usr/bin/python3
 str = "Hoberton School"
-print("
+print("{str *3}\n{str[:9]}")
