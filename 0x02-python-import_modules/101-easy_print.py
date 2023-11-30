@@ -1,3 +1,2 @@
 #!/usr/bin/python3
-sys.stdout.write("#pythoniscool!\n")
-sys.stdout.flush()
+__import__("os").write(1, "#pythoniscool\n".encode("utf-8"))
