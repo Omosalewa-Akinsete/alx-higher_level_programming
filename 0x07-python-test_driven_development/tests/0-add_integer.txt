@@ -14,44 +14,43 @@
 >>> add_integer(-1,1)
 0
 
-""" ERRORS """
 
-#pass in not int, a string
+pass in not int, a string
 >>> add_integer("sophia", 2)
 Traceback (most recent call last):
 ...
 TypeError: a must be an integer
 
 
-#pass in not int, a list
+pass in not int, a list
 >>> add_integer([0], {})
 Traceback (most recent call last):
 ...
 TypeError: a must be an integer
 
 
-#pass in a string for b
+pass in a string for b
 >>> add_integer(5, "terry")
 Traceback (most recent call last):
 ...
 TypeError: b must be an integer
 
 
-#pass is nothing
+pass is nothing
 >>> add_integer(None)
 Traceback (most recent call last):
 ...
 TypeError: a must be an integer
 
 
-#converting float infinities to int errors
+converting float infinities to int errors
 >>> add_integers(float('inf'), 2)
 Traceback: (most recent call last):
 ...
 OverflowError: cannot convert float infinity to integer
 
 
-#converting float NaN to int errors
+converting float NaN to int errors
 >>> add_integer(float('NaN'), 2)
 Traceback: (most recent call last):
 ...
