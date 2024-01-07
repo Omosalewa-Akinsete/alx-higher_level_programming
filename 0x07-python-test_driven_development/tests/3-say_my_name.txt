@@ -14,16 +14,16 @@ Now use it:
 	My name is Susan Steven
 
 	>>> say_my_name("Susan")
-	My name is Susan
+	My name is Susan 
 
 	>>> say_my_name("Steven")
-	My name is Steven
+	My name is Steven 
 
 	>>> say_my_name(" , ")
-	My name is
+	My name is  ,  
 
 	>>> say_my_name("")
-	My name is
+	My name is  
 
 	>>> say_my_name(98, "Steven")
 	Traceback (most recent call last):
@@ -36,7 +36,7 @@ Now use it:
 	TypeError: first_name must be a string
 
 	>>> say_my_name("Susan", 98)
-	Traceback (most recent last call):
+	Traceback (most recent call last):
 	...
 	TypeError: last_name must be a string
 
