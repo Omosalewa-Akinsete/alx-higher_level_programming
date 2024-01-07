@@ -30,7 +30,7 @@ TypeError: a must be an integer
 
 
 pass in a string for b
->>> add_integer(5, "terry")
+>>> add_integer(5, "Susan")
 Traceback (most recent call last):
 ...
 TypeError: b must be an integer
@@ -44,14 +44,14 @@ TypeError: a must be an integer
 
 
 converting float infinities to int errors
->>> add_integers(float('inf'), 2)
-Traceback: (most recent call last):
+>>> add_integer(float('inf'), 2)
+Traceback (most recent call last):
 ...
 OverflowError: cannot convert float infinity to integer
 
 
 converting float NaN to int errors
 >>> add_integer(float('NaN'), 2)
-Traceback: (most recent call last):
+Traceback (most recent call last):
 ...
 ValueError: cannot convert float NaN to integer
