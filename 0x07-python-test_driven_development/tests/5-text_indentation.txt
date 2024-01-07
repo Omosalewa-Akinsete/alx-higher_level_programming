@@ -19,14 +19,14 @@ Now use it:
 	<BLANKLINE>
 	litteram videor an totas paginas commovere
 
-	>>> text_indentation("Lorem:")
-	Lorem:
+	>>> text_indentation("Steven:")
+	Steven:
 	<BLANKLINE>
 
-	>>> text_indentation("Terry")
+	>>> text_indentation("Susan")
 	Susan
 
-	>>> text_indentation(":Terry")
+	>>> text_indentation(":Susan")
 	:
 	<BLANKLINE>
 	Susan
