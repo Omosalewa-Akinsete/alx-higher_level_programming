@@ -34,7 +34,7 @@ Import the function:
 
 	>>> print_square("Hello")
 	Traceback (most recent call last):
-	TypeError: size mut be an integer
+	TypeError: size must be an integer
 
 	>>> print_square(5.7)
 	Traceback (most recent call last):
