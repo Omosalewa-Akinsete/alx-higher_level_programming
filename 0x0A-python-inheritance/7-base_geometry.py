@@ -8,7 +8,7 @@ class BaseGeometry:
     """A class with public instance method area and integer_validator"""
     def area(self):
         """Raises and excepton when called"""
-        raise Exception("area() is not implemeted")
+        raise Exception("area() is not implemented")
 
     def integer_validator(self, name, value):
         """Validates that value is an integer greater than 0"""
