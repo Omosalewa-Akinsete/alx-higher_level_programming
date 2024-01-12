@@ -9,13 +9,13 @@ class Square(Rectangle):
     """Representation of a Square"""
 
     def __init__(self, size, x=0, y=0, id=None):
-    """Initializes a new Square
-    Args:
-        size (int): The size of the new Square
-        x (int): The x coordinate of the new Square
-        y (int): The y coordinate of the new Square
-        id (int): The identity of the new Square
-    """
+        """Initializes a new Square
+        Args:
+            size (int): The size of the new Square
+            x (int): The x coordinate of the new Square
+            y (int): The y coordinate of the new Square
+            id (int): The identity of the new Square
+        """
     super().__init__(size, size, x, y, id)
 
     @property
@@ -79,5 +79,5 @@ class Square(Rectangle):
 
     def __str__(self):
         """Return the print() and str() representation of a Square"""
-        return "[Square] ({}) {}/{} - {}".format(self.id, self.x, self.y,
-                                                self.width)
+        return ("[Square] ({}) {}/{} - {}".
+                format(self.id, self.x, self.y, self.width))
