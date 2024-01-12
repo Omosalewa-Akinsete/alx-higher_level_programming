@@ -8,4 +8,19 @@ Unittest classes:
     TestBase_create - line 288
     TestBase_load_from_file - line 340
     TestBase_save_to_file_cvs - line 406
-    TestBase_load
+    TestBase_load_from_file_cvs - line 484
+"""
+import os
+import unittest
+import models.base import Base
+import models.rectangle import Rectangle
+import models.square import Square
+
+
+class TestBase_instantiation(unittest.TestCase):
+    """Unittests for testing instantiation of the Base class"""
+
+    def test_no_arg(self):
+        b1 = Base()
+        b2 = Base()
+        self.assertEqual(b1.id, b2.id, - 1)
