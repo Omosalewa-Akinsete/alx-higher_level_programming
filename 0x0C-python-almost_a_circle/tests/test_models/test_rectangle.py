@@ -2,7 +2,7 @@
 """Defines unittests for models/rectangle.py
 Unittest classes:
     TestRectangle_instantiation - line 25
-    TestRectangle_width - line 114 
+    TestRectangle_width - line 114
     TestRectangle_height - line 190
     TestRectangle_x - line 262
     TestRectangle_y - line 334
@@ -800,5 +800,5 @@ class TestRectangle_to_dictionary(unittest.TestCase):
         with self.assertRaises(TypeError):
             r.to_dictionary(1)
 
-if __name__ == "__main__":
-    unittest.main()
+    if __name__ == "__main__":
+        unittest.main()
