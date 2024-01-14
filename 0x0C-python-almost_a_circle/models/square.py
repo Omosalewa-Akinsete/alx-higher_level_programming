@@ -5,7 +5,7 @@ This module contains the Square class
 from models.rectangle import Rectangle
 
 
-class Square(Base):
+class Square(Rectangle):
     """Representation of a Square"""
 
     def __init__(self, size, x=0, y=0, id=None):

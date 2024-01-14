@@ -25,7 +25,7 @@ class Rectangle(Base):
         self.x = x
         self.y = y
         super().__init__(id)
-    
+
     @classmethod
     def save_to_file_csv(cls, rectangles):
         """Implementation of the method to save rectangles to CSV file"""
@@ -37,7 +37,7 @@ class Rectangle(Base):
             pass
         else:
             pass
-            
+
     @property
     def width(self):
         """Set/get the width of the Rectangle"""
