@@ -31,6 +31,13 @@ class Rectangle(Base):
         """Implementation of the method to save rectangles to CSV file"""
         pass
 
+    @classmethod
+    def load_to_file(cls, filename=None):
+        if filename:
+            pass
+        else:
+            pass
+            
     @property
     def width(self):
         """Set/get the width of the Rectangle"""

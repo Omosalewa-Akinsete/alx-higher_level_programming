@@ -17,6 +17,13 @@ class Square(Base):
             id (int): The identity of the new Square
         """
         super().__init__(size, size, x, y, id)
+        self.size = size
+        self.x = x
+        self.y = y
+
+    def area(self):
+        """Calculate the area of thr square"""
+        return self.width * self.height
 
     @property
     def size(self):
@@ -29,7 +36,7 @@ class Square(Base):
         self.height = value
 
     def update(self, *args, **kwargs):
-        """Update the Square
+        """Update the Square attributes
         Args:
             *args (ints): New attribute values
                 - 1st argument represents id attribute
