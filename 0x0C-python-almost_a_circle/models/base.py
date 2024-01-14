@@ -25,6 +25,11 @@ class Base:
             Base.__nb_objects += 1
             self.id = Base.__nb_objects
 
+    @classmethod
+    def save_to_file_csv(cls, objects):
+        """Implementation of the method to save object to a CSV file"""
+        pass
+
     @staticmethod
     def to_json_string(list_dictionaries):
         """Return the JSON serialization of a list of dicts
@@ -77,13 +82,14 @@ class Base:
             return new
 
     @classmethod
-    def load_from_file(cls):
+    def load_from_file(cls, filename):
         """Return a list of classes instantiated from a file of JSON strings
         Reads from '<cls.__name__>.json'
         Returns:
             If the file does not exist - an empty list
             Otherwise - a list of instantiated classes
         """
+        pass
         filename = str(cls.__name__) + ".json"
         try:
             with open(filename, "r") as jsonfile:

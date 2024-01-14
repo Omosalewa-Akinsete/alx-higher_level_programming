@@ -25,6 +25,11 @@ class Rectangle(Base):
         self.x = x
         self.y = y
         super().__init__(id)
+    
+    @classmethod
+    def save_to_file_csv(cls, rectangles):
+        """Implementation of the method to save rectangles to CSV file"""
+        pass
 
     @property
     def width(self):
@@ -40,7 +45,7 @@ class Rectangle(Base):
         self.__width = value
 
     @property
-    def height(self, value):
+    def height(self):
         """Self/get the height of the Rectangle"""
         return self.__height
 
@@ -151,6 +156,5 @@ class Rectangle(Base):
 
     def __str__(self):
         """Return the print() and str() representation of the Rectangle"""
-        return "[Rectangle] ({}) {}/{} - {}/{}". format(self.id, self.x,
-                                                        self.width,
-                                                        self.height)
+        return ("[Rectangle] ({}) {}/{} - {}/{}".
+                format(self.id, self.x, self.y, self.width, self.height))
