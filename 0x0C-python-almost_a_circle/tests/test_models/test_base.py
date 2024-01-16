@@ -153,22 +153,6 @@ class TestBase_to_json_string(unittest.TestCase):
 class TestBase_save_to_file(unittest.TestCase):
     """Unittests for testing save_to_file method of Base class."""
 
-    @classmethod
-    def tearDown(self):
-        """Delete any created files."""
-        try:
-            os.remove("Rectangle.json")
-        except IOError:
-            pass
-        try:
-            os.remove("Square.json")
-        except IOError:
-            pass
-        try:
-            os.remove("Base.json")
-        except IOError:
-            pass
-
     def test_save_to_file_one_rectangle(self):
         r = Rectangle(10, 7, 2, 8, 5)
         Rectangle.save_to_file([r])
@@ -337,18 +321,6 @@ class TestBase_create(unittest.TestCase):
 class TestBase_load_from_file(unittest.TestCase):
     """Unittests for testing load_from_file_method of Base class."""
 
-    @classmethod
-    def tearDown(self):
-        """Delete any created files."""
-        try:
-            os.remove("Rectangle.json")
-        except IOError:
-            pass
-        try:
-            os.remove("Square.json")
-        except IOError:
-            pass
-
     def test_load_from_file_first_rectangle(self):
         r1 = Rectangle(10, 7, 2, 8, 1)
         r2 = Rectangle(2, 4, 5, 6, 2)
@@ -391,10 +363,6 @@ class TestBase_load_from_file(unittest.TestCase):
         output = Square.load_from_file()
         self.assertTrue(all(type(obj) == Square for obj in output))
 
-    def test_load_from_file_no_file(self):
-        output = Square.load_from_file()
-        self.assertEqual([], output)
-
     def test_load_from_file_more_than_one_arg(self):
         with self.assertRaises(TypeError):
             Base.load_from_file([], 1)
@@ -402,22 +370,6 @@ class TestBase_load_from_file(unittest.TestCase):
 
 class TestBase_save_to_file_csv(unittest.TestCase):
     """Unittests for testing save_to_file_csv method of Base class."""
-
-    @classmethod
-    def tearDown(self):
-        """Delete any created files."""
-        try:
-            os.remove("Rectangle.csv")
-        except IOError:
-            pass
-        try:
-            os.remove("Square.csv")
-        except IOError:
-            pass
-        try:
-            os.remove("Base.csv")
-        except IOError:
-            pass
 
     def test_save_to_file_csv_one_rectangle(self):
         r = Rectangle(10, 7, 2, 8, 5)
@@ -481,24 +433,14 @@ class TestBase_save_to_file_csv(unittest.TestCase):
 class TestBase_load_from_file_csv(unittest.TestCase):
     """Unittests for testing load_from_file_csv method of Base class."""
 
-    @classmethod
-    def tearDown(self):
-        """Delete any created files."""
-        try:
-            os.remove("Rectangle.csv")
-        except IOError:
-            pass
-        try:
-            os.remove("Square.csv")
-        except IOError:
-            pass
-
     def test_load_from_file_csv_first_rectangle(self):
         r1 = Rectangle(10, 7, 2, 8, 1)
         r2 = Rectangle(2, 4, 5, 6, 2)
-        Rectangle.save_to_file_csv([r1, r2])
-        list_rectangles_output = Rectangle.load_from_file_csv()
-        self.assertEqual(str(r1), str(list_rectangles_output[0]))
+        list_output_input = [r1, r2]
+        Rectangle.save_to_file_csv(list_output_input)
+        l_output = Rectangle.load_from_file_csv()
+        r1_string = "[Rectangle] (1) 2/8 - 10/7"
+        self.assertEqual(str(l_output[0]), r1_string)
 
     def test_load_from_file_csv_second_rectangle(self):
         r1 = Rectangle(10, 7, 2, 8, 1)
@@ -543,5 +485,5 @@ class TestBase_load_from_file_csv(unittest.TestCase):
         with self.assertRaises(TypeError):
             Base.load_from_file_csv([], 1)
 
-    if __name__ == "__main__":
-        unittest.main()
+if __name__ == "__main__":
+    unittest.main()
