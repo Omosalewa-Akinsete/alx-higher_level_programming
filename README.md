@@ -25,3 +25,7 @@ This repository contains projects on High-level programming, High-level programm
 12. 0x0B. Python - Input/Output
 
 13. 0x0C. Python - Almost a circle
+
+14. 0x0D. SQL - Introduction
+
+15. 0x0E. SQL - More queries
