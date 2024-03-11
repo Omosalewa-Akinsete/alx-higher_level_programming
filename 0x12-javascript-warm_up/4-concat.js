@@ -1,2 +1,4 @@
 #!/usr/bin/node
-console.log(typeof process.argv[2] === 'undefined' ? 'is' : process.argv[2]);
+const argument1 = process.argv[2] || "";
+const argument2 = process.argv[3] || "";
+console.log(`${process.argv[2]} is ${process.argv[3]}`);
