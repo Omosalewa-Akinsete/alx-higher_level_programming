@@ -1,4 +1,4 @@
-This repository contains projects on High-level programming, High-level programming - Python
+This repository contains projects on High-level programming, High-level programming - Python, SQL and JavaScript
 
 1. 0x00. Python - Hello, World
 
@@ -29,3 +29,5 @@ This repository contains projects on High-level programming, High-level programm
 14. 0x0D. SQL - Introduction
 
 15. 0x0E. SQL - More queries
+
+16. 0x12. JavaScript - Warm up
