@@ -31,3 +31,5 @@ This repository contains projects on High-level programming, High-level programm
 15. 0x0E. SQL - More queries
 
 16. 0x12. JavaScript - Warm up
+
+17. 0x13. JavaScript - Objects, Scopes and Closures
