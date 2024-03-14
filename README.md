@@ -33,3 +33,5 @@ This repository contains projects on High-level programming, High-level programm
 16. 0x12. JavaScript - Warm up
 
 17. 0x13. JavaScript - Objects, Scopes and Closures
+
+18. 0x0F. Python - Object-relational mapping
