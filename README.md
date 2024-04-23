@@ -39,3 +39,5 @@ This repository contains projects on High-level programming, High-level programm
 19. 0x10. Python - Network #0
 
 20. 0x11. Python - Network #1
+
+21. 0x14. JavaScript - Web scraping
